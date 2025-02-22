@@ -1,0 +1,223 @@
+apiVersion: v1
+entries:
+  cluster-acm:
+  - apiVersion: v2
+    appVersion: 2.10.0
+    created: "2025-02-22T13:10:06.0635983+01:00"
+    dependencies:
+    - alias: project
+      condition: project.enabled
+      name: project
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 14.6.343
+    - alias: operator
+      condition: operator.enabled
+      name: operator
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 14.6.343
+    description: Helm chart used to configure Advanced Cluster Manager at the cluster
+      level
+    digest: ee987c8367ec55229da63065f4bd34a9e51acea3a8cad16795808b1c02461f65
+    icon: https://helm-repository.readthedocs.io/en/latest/img/cluster-acm.svg
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-acm
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-acm-14.6.381.tgz
+    version: 14.6.381
+  cluster-acs:
+  - apiVersion: v2
+    appVersion: "4.5"
+    created: "2025-02-22T13:10:06.0666621+01:00"
+    description: Helm chart used to configure Openshift Container acs at the cluster
+      level
+    digest: ca0905d4b01ea7cae1651227bbe9552bfae36a2e20e1c25b9cdeb722f5f3fa29
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-acs
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-acs-1.tgz
+    version: "1"
+  cluster-auth:
+  - apiVersion: v2
+    appVersion: 4.15.17
+    created: "2025-02-22T13:10:06.1011524+01:00"
+    dependencies:
+    - alias: auth
+      condition: auth.enabled
+      name: cluster-auth
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 16.19.33
+    description: Helm chart used to configure Auth at the cluster level
+    digest: b8dc0b04ed3ff2ce83ca1617664317f98617e46870f585f929d355ce0853b525
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-auth
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-auth-16.19.33.tgz
+    version: 16.19.33
+  cluster-config:
+  - apiVersion: v2
+    appVersion: 4.15.17
+    created: "2025-02-22T13:10:06.1076581+01:00"
+    dependencies:
+    - alias: config
+      condition: config.enabled
+      name: cluster-config
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 14.6.305
+    description: Helm chart used to configure Auth at the cluster level
+    digest: da32dcb9139efb8ee65abf26c866185a9e446501563f58dae59865c207c76a1f
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-config
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-config-14.6.305.tgz
+    version: 14.6.305
+  cluster-console:
+  - apiVersion: v2
+    appVersion: 4.15.17
+    created: "2025-02-22T13:10:06.1171631+01:00"
+    dependencies:
+    - alias: console
+      condition: console.enabled
+      name: cluster-console
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 16.19.59
+    description: Helm chart used to configure Auth at the cluster level
+    digest: 32b24229d3604bb9a8ef908dc66e747eb2d89ccea56d99fba3ad420e7e598cd0
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-console
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-console-16.19.33.tgz
+    version: 16.19.33
+  cluster-logging:
+  - apiVersion: v2
+    appVersion: 4.15.17
+    created: "2025-02-22T13:10:06.1216695+01:00"
+    dependencies:
+    - alias: logging
+      condition: logging.enabled
+      name: cluster-logging
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 14.6.281
+    description: Helm chart used to configure Auth at the cluster level
+    digest: bec904afddbc01a0a74d390ada554ca0259c2e8fd03430a203ec03bd018d8844
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-logging
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-logging-14.6.281.tgz
+    version: 14.6.281
+  cluster-machine:
+  - apiVersion: v2
+    appVersion: 4.15.17
+    created: "2025-02-22T13:10:06.1256741+01:00"
+    dependencies:
+    - alias: machine
+      condition: machine.enabled
+      name: cluster-machine
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 16.19.59
+    description: Helm chart used to configure Auth at the cluster level
+    digest: ef1738f3677ed457374e59b3353905e52d5d91f1e1a97305a4d76637c0d74606
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-machine
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-machine-16.19.59.tgz
+    version: 16.19.59
+  cluster-mustgather:
+  - apiVersion: v2
+    appVersion: 4.15.17
+    created: "2025-02-22T13:10:06.129673+01:00"
+    dependencies:
+    - alias: mustgather
+      condition: mustgather.enabled
+      name: cluster-mustgather
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 16.19.59
+    description: Helm chart used to configure Auth at the cluster level
+    digest: 829a96611a4cdbc8ea32c85617a1ceb567e4aed04a5e9880951e5e29204bc7c9
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-mustgather
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-mustgather-16.19.59.tgz
+    version: 16.19.59
+  cluster-oadp:
+  - apiVersion: v2
+    appVersion: 4.15.17
+    created: "2025-02-22T13:10:06.1351846+01:00"
+    dependencies:
+    - alias: oadp
+      condition: oadp.enabled
+      name: cluster-oadp
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 16.19.59
+    description: Helm chart used to configure Auth at the cluster level
+    digest: 7c4685b1559fe203fff8ec60d913c372c626b950be517c16d816afc9fa47a0d1
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-oadp
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-oadp-16.19.33.tgz
+    version: 16.19.33
+  cluster-rbac:
+  - apiVersion: v2
+    appVersion: 4.15.17
+    created: "2025-02-22T13:10:06.1381867+01:00"
+    dependencies:
+    - alias: rbac
+      condition: rbac.enabled
+      name: cluster-rbac
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 16.19.59
+    description: Helm chart used to configure RBAC at the cluster level
+    digest: 8ce6ffe69a6ff9597cb1845920bf66f9dd7fd371e85bf2fb2c35ac707e1f5184
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-rbac
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-rbac-14.6.381.tgz
+    version: 14.6.381
+  cluster-storage:
+  - apiVersion: v2
+    appVersion: 4.15.17
+    created: "2025-02-22T13:10:06.1411831+01:00"
+    dependencies:
+    - alias: storage
+      condition: storage.activated
+      name: cluster-storage
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 16.19.59
+    description: Helm chart used to configure Auth at the cluster level
+    digest: d97b0465823a919670b70055af3cc4601b867913013913af558271b6b24177c3
+    kubeVersion: '>=1.25.0-0'
+    name: cluster-storage
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/cluster-storage-16.19.59.tgz
+    version: 16.19.59
+  ldapsyc:
+  - apiVersion: v2
+    appVersion: 2.10.0
+    created: "2025-02-22T13:10:06.1446914+01:00"
+    dependencies:
+    - alias: ldapsync_project
+      condition: ldapsync_project.enabled
+      name: project
+      repository: https://helm-repository.readthedocs.io/en/latest/repos/stable/
+      version: 16.19.31
+    description: Helm chart used to configure Advanced Cluster Manager at the cluster
+      level
+    digest: 1af203510fb98836fb3cf503aebb43dc6eea135308b5f81f727b775b7aef59f4
+    icon: https://helm-repository.readthedocs.io/en/latest/img/cluster-acm.svg
+    kubeVersion: '>=1.25.0-0'
+    name: ldapsyc
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/kail-x-y/helm/main/ldapsyc-14.6.381.tgz
+    version: 14.6.381
+generated: "2025-02-22T13:10:06.0578923+01:00"
